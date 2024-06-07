@@ -1,0 +1,16 @@
+<nav id="menu" [ngClass]="{'scrolled': scrolled,'hiddenScrolledMenu':hiddenScrolledMenu}">
+    <app-logo label="JL"></app-logo>
+    <section class="container-right">
+        <ul class="menu-container-opcoes">
+            @for (item of menuOptions; track $index) {
+            <li>
+                <a>
+                    <app-numerador [index]="$index+1"></app-numerador>
+                    {{ item.label | titlecase }}
+                </a>
+            </li>
+            }
+        </ul>
+        <app-botao label="Currículo"></app-botao>
+    </section>
+</nav>

@@ -1,0 +1,55 @@
+@import '../../../../assets/styles/variables.scss';
+
+#menu {
+    height: $heigth-menu;
+    width: 100%;
+    background-color: $primary-color ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.4rem;
+    transition: .2s ease-in;
+
+
+
+    .container-right {
+
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+
+        ul.menu-container-opcoes {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+
+            li {
+
+                a {
+                    color: $primary-text-color;
+                    font-family: "Roboto Mono", monospace;
+                    font-size: 13px;
+                    cursor: pointer;
+
+                    &:hover {
+
+                        color: $secondary-color ;
+                    }
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+
+        filter: blur(.9);
+        opacity: 0.9;
+    }
+
+    &.hiddenScrolledMenu {
+
+        transform: translateY(-$heigth-menu);
+    }
+
+}

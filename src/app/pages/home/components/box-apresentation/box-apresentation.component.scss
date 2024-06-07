@@ -1,0 +1,40 @@
+@import '../../../../../assets/styles/variables.scss';
+
+.container-saudacao {
+
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Mono", monospace;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    min-height: calc(100vh - $heigth-menu);
+
+    span {
+        color: $secondary-color;
+    }
+
+    h1,
+    h2 {
+        font-size: clamp(40px, 8vw, 50px);
+        margin-top: .5rem;
+    }
+
+    h1 {
+
+        color: $primary-text-color;
+    }
+
+    h2 {
+        color: $secondary-text-color;
+    }
+
+    p {
+        color: $secondary-text-color;
+        font-family: "Roboto Mono", monospace;
+        width: 60%;
+        text-align: justify;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
