@@ -1,0 +1,18 @@
+<section class="container-info-experiecia">
+    <h3>{{data.cargo | titlecase }}</h3>
+    <p class="info-empresa-periodo">
+        <span class="nome-empresa">{{data.nomeEmpresa | titlecase}}</span>
+        <span class="periodo"> {{ data.dataInicio | periodo:data.dataFim }} </span>
+    </p>
+
+    <div class="container-funcoes">
+        <ul app-ul>
+
+            @for (item of data.funcoes; track $index) {
+            <li app-li>
+                {{item}}
+            </li>
+            }
+        </ul>
+    </div>
+</section>

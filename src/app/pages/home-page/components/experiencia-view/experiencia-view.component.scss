@@ -1,0 +1,38 @@
+@import '../../../../../assets/styles/variables.scss';
+
+.container-info-experiecia {
+
+    h3 {
+
+        color: $primary-text-color;
+        font-family: "Roboto Mono", monospace;
+        font-size: 18px;
+    }
+
+    p.info-empresa-periodo {
+
+
+        font-family: "Roboto Mono", monospace;
+        color: $secondary-text-color;
+
+        display: flex;
+        flex-direction: column;
+
+        .nome-empresa {
+
+            color: $secondary-color;
+            font-size: 15px;
+        }
+
+        .periodo {
+
+            font-size: 12px;
+        }
+    }
+
+    .container-funcoes {
+
+        width: 80%;
+        margin-top: 1rem;
+    }
+}

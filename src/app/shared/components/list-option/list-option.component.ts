@@ -1,5 +1,5 @@
 import { NgClass, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ListOption } from './list-options.model';
 
 @Component({
@@ -9,19 +9,27 @@ import { ListOption } from './list-options.model';
   templateUrl: './list-option.component.html',
   styleUrl: './list-option.component.scss'
 })
-export class ListOptionComponent {
+export class ListOptionComponent implements OnInit {
+
 
   @Input() indexCurrent: number = 0;
-  @Input({ required: true }) options!: ListOption[]
+  @Input({ required: true }) options!: ListOption<any>[]
+
+  @Output() select: EventEmitter<ListOption<any>> = new EventEmitter();
 
   public heightItem: number = 45;
   public transformY!: string
 
+  ngOnInit(): void {
+    this.changeIndex(this.indexCurrent);
+  }
 
-  public changeInde(index: number) {
+  public changeIndex(index: number) {
 
     this.indexCurrent = index;
     this.calculateScrollPosition()
+
+    this.select.emit(this.options[index]);
 
   }
 
@@ -31,4 +39,5 @@ export class ListOptionComponent {
 
     this.transformY = `translateY(${scrollValue}px)`
   }
+
 }

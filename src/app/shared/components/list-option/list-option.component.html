@@ -3,13 +3,13 @@
         <span [attr.data-index]="indexCurrent" class="scroll-select" [ngStyle]="{'transform': transformY}"></span>
 
         @for (item of options; track $index) {
-        <li (click)="changeInde($index)" [ngClass]="{'index-current': indexCurrent == $index}">{{item.title}}</li>
+        <li (click)="changeIndex($index)" [ngClass]="{'index-current': indexCurrent == $index}">{{item.title}}</li>
         }
 
     </ul>
 
     <section class="container-content-list">
-
+        <ng-content></ng-content>
     </section>
 
 </div>
