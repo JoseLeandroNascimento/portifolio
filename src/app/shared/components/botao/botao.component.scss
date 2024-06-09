@@ -2,7 +2,7 @@
 
 button {
     cursor: pointer;
-    padding: .7rem 1.4rem;
+
     background-color: $primary-color;
     color: $secondary-color;
     border: 1px solid $secondary-color;
@@ -11,13 +11,24 @@ button {
     z-index: 100;
     transition: .1s ease-in;
     font-family: "Roboto Mono", monospace;
-    font-size: 13px;
 
     &:hover {
 
         transform: translateX(-8px);
         transform: translateY(-5px);
         box-shadow: 3px 3px 1px $secondary-color;
+    }
+
+    &[scale='medio'] {
+
+        padding: .7rem 1.4rem;
+        font-size: 13px;
+    }
+
+    &[scale='grande'] {
+
+        padding: 1rem 2rem;
+        font-size: 15px;
     }
 
 

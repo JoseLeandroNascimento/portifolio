@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class BotaoComponent {
 
+  @Input() scale: "pequeno" | "medio" | "grande" = "medio"
   @Input({ required: true }) label!: string;
 
 }
