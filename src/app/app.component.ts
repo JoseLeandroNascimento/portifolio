@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { ElevationFixedInfoComponent } from './shared/components/elevation-fixed-info/elevation-fixed-info.component';
 import { ListRedesSociaisComponent } from './shared/components/list-redes-sociais/list-redes-sociais.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { ListRedesSociaisComponent } from './shared/components/list-redes-sociai
     RouterOutlet,
     MenuComponent,
     ElevationFixedInfoComponent,
-    ListRedesSociaisComponent
+    ListRedesSociaisComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
