@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { NumerarPipe } from '../../pipe/numerar.pipe';
 
 @Component({
@@ -6,10 +6,10 @@ import { NumerarPipe } from '../../pipe/numerar.pipe';
   standalone: true,
   imports: [NumerarPipe],
   templateUrl: './numerador.component.html',
-  styleUrl: './numerador.component.scss'
+  styleUrl: './numerador.component.scss',
 })
 export class NumeradorComponent {
 
-  @Input({ required: true }) index!: number
+  @Input({ required: true }) index!: number;
 
 }
