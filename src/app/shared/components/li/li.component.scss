@@ -1,0 +1,16 @@
+@import '../../../../assets/styles/variables.scss';
+
+
+.item-li {
+
+    color: $secondary-text-color;
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    padding: 0 .3rem;
+}
+
+.icon {
+    color: $secondary-color;
+    font-size: 13px;
+    margin: .5rem 0;
+}

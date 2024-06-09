@@ -12,11 +12,11 @@
 
     .container-text {
 
-        flex: 2;
-        font-family: "inter";
-        color: $secondary-text-color;
 
         p {
+            flex: 2;
+            font-family: "inter";
+            color: $secondary-text-color;
             margin-bottom: 1rem;
         }
     }
