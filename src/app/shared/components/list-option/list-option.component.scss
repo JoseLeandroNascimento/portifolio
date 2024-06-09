@@ -1,0 +1,55 @@
+@import '../../../../assets/styles/variables.scss';
+
+$height-item: 45px;
+$background-color-hover: #112240;
+
+.container-list-option {
+
+    display: flex;
+
+    ul {
+
+        flex: auto;
+        list-style: none;
+        max-width: 200px;
+        border-left: 2px solid #233554;
+        position: relative;
+
+        li {
+
+            cursor: pointer;
+            height: $height-item;
+            display: flex;
+            align-items: center;
+            color: $secondary-text-color ;
+            font-family: "Roboto Mono", monospace;
+            font-size: 13px;
+            padding: 0 .5rem;
+
+            &.index-current {
+                color: $secondary-color;
+            }
+
+            &:hover {
+                background-color: $background-color-hover ;
+            }
+        }
+
+        .scroll-select {
+
+            display: inline-block;
+            height: $height-item;
+            width: 2px;
+            position: absolute;
+            background: $secondary-color;
+            left: -2px;
+            transition: .3s ease-in;
+
+        }
+    }
+
+    .container-content-list {
+
+        flex: 1;
+    }
+}
