@@ -1,0 +1,43 @@
+@import '../../../../../assets/styles/variables.scss';
+
+.container-sobre-mim {
+
+    display: flex;
+
+    .container-text,
+    .container-img-perfil {
+
+        padding: .5rem;
+    }
+
+    .container-text {
+
+        flex: 2;
+        font-family: "inter";
+        color: $secondary-text-color;
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .container-img-perfil {
+
+        flex: 1;
+
+
+        img.img-foto-perfil {
+            width: 80%;
+            height: auto;
+            border-radius: 4px;
+            transition: .2s ease-in;
+            cursor: pointer;
+
+
+            &:hover {
+
+                transform: scale(1.05);
+            }
+        }
+    }
+}
