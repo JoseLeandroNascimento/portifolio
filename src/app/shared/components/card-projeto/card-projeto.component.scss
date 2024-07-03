@@ -1,0 +1,55 @@
+@import '../../../../assets/styles/variables.scss';
+
+
+.card-container {
+
+    background-color: #112240;
+    border-radius: 4px;
+    width: 320px;
+    height: 300px;
+
+    padding: 1.2rem;
+
+    .card-icons {
+
+        display: flex;
+        justify-content: space-between;
+
+
+        .icon {
+
+            width: 30px;
+            height: 30px;
+
+            &>* {
+
+                color: $secondary-color;
+            }
+        }
+
+        .icon-links {
+
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    h3 {
+
+        color: $primary-text-color;
+        font-family: "inter";
+        margin: .8rem 0;
+    }
+
+    p {
+        color: $secondary-text-color;
+        font-family: "inter";
+        text-align: justify;
+    }
+}
